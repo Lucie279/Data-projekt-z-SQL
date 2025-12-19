@@ -13,6 +13,7 @@ ORDER BY rok;
 -- kontrola
 SELECT * FROM spolecne_roky;
 
+
 -- primární tabulka: mzdy + ceny potravin v jednom přehledu
 DROP TABLE IF EXISTS t_lucie_mendlikova_project_sql_primary_final;
 
@@ -67,6 +68,7 @@ ORDER BY
 
 -- kontrola
 SELECT * FROM t_lucie_mendlikova_project_sql_secondary_final;
+
 
 
 

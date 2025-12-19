@@ -13,7 +13,7 @@ ORDER BY rok;
 -- kontrola
 SELECT * FROM spolecne_roky;
 
--- hlavní tabulka: mzdy + ceny potravin v jednom přehledu
+-- primární tabulka: mzdy + ceny potravin v jednom přehledu
 DROP TABLE IF EXISTS t_lucie_mendlikova_project_sql_primary_final;
 
 CREATE TABLE t_lucie_mendlikova_project_sql_primary_final AS
@@ -45,7 +45,7 @@ ORDER BY
 SELECT * FROM t_lucie_mendlikova_project_sql_primary_final;
 
 
--- pomocná tabulka: ekonomická data pro evropské státy ve stejném období jako ČR
+-- sekundární tabulka: ekonomická data pro evropské státy ve stejném období jako ČR
 DROP TABLE IF EXISTS t_lucie_mendlikova_project_sql_secondary_final;
 
 CREATE TABLE t_lucie_mendlikova_project_sql_secondary_final AS
@@ -67,6 +67,7 @@ ORDER BY
 
 -- kontrola
 SELECT * FROM t_lucie_mendlikova_project_sql_secondary_final;
+
 
 
 
